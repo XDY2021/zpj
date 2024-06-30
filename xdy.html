@@ -25,9 +25,9 @@
         img{
             display: block;
             margin-bottom:16px;
-            min-height:500px;
+            min-height:400px;
             position: relative;
-            top:-240px;
+            top:-200px;
         }
     </style>
 </head>
@@ -119,9 +119,7 @@
                     img.src = img.dataset.src;
                     self.unobserve(img);
                     img.style.top = "0"
-                    // setTimeout(()=>{
-                    //     img.style.minHeight = "200px"
-                    // })
+                    img.style.minHeight = "200px"
                 }
                 });
             }, config);
