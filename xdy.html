@@ -25,7 +25,9 @@
         img{
             display: block;
             margin-bottom:16px;
-            min-height:200px;
+            min-height:500px;
+            position: relative;
+            top:-540px;
         }
     </style>
 </head>
@@ -116,6 +118,10 @@
                     const img = entry.target;
                     img.src = img.dataset.src;
                     self.unobserve(img);
+                    img.style.top = "0"
+                    // setTimeout(()=>{
+                    //     img.style.minHeight = "200px"
+                    // })
                 }
                 });
             }, config);
